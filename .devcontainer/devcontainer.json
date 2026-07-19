@@ -1,0 +1,12 @@
+{
+  "name": "Basic Dev Environment",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'right click html file and click show preview to view live'"
+}
