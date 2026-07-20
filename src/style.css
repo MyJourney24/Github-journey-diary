@@ -1,0 +1,67 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+:root {
+    /*colours*/
+    --white-color: #FFFFFF;
+    --light-color: #E9F1F0;
+    --dark-color: #060036;
+    --primary-color: #102B4A;
+    --accent-colour: #1EBB9F;
+
+    /*font size*/
+    --f-size-5:0.9rem;
+    --f-size-4:1rem;
+    --f-size-3:1.25rem;
+    --f-size-2:1.5rem;
+    --f-size-1:2rem;
+
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 2rem;
+}
+
+.nav-list {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    float: right;
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+@media screen and (max-width: 457px){
+    nav {
+        padding-bottom: 4rem;
+    }
+    .nav-list {
+        float: left;
+    }
+
+    .log {
+        display: block
+    }
+}
+
+.nav-buttons {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-block;
+}
